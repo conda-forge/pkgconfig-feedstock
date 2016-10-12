@@ -7,12 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  fn: v{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/matze/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -22,6 +22,8 @@ requirements:
     - nose >=1.0
   run:
     - python
+    - pkg-config        # [unix]
+    - m2w64-pkg-config  # [win]
 
 test:
   imports:
@@ -30,9 +32,11 @@ test:
 about:
   home: https://github.com/matze/pkgconfig
   license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: 'A Python interface to the pkg-config command line tool'
 
 extra:
   recipe-maintainers:
+    - jakirkham
     - lbdreyer
