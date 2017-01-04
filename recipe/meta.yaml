@@ -1,6 +1,6 @@
 {% set name = "pkgconfig" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "4de443a62f4b83d883a7b3895d4d4d3ca1934383ebdbeb0f2e6ab126085d812a" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "3f19a8eba1c6fc88a32c5e2a2ce2a25cefb58e530541979202b8c96d650bbddb" %}
 
 package:
   name: {{ name|lower }}
@@ -40,3 +40,4 @@ extra:
   recipe-maintainers:
     - jakirkham
     - lbdreyer
+    - ocefpaf
