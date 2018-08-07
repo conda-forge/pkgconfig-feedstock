@@ -14,14 +14,16 @@ Summary: A Python interface to the pkg-config command line tool
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pkgconfig-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pkgconfig-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pkgconfig-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pkgconfig-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pkgconfig-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pkgconfig-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pkgconfig-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pkgconfig-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pkgconfig-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pkgconfig-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pkgconfig-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pkgconfig-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pkgconfig/badges/version.svg)](https://anaconda.org/conda-forge/pkgconfig)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pkgconfig/badges/downloads.svg)](https://anaconda.org/conda-forge/pkgconfig)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pkgconfig-green.svg)](https://anaconda.org/conda-forge/pkgconfig) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pkgconfig.svg)](https://anaconda.org/conda-forge/pkgconfig) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pkgconfig.svg)](https://anaconda.org/conda-forge/pkgconfig) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pkgconfig.svg)](https://anaconda.org/conda-forge/pkgconfig) |
 
 Installing pkgconfig
 ====================
