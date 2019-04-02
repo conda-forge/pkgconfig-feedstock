@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -18,7 +18,7 @@ requirements:
   host:
     - python
     - pip
-    - nose >=1.0
+    - poetry >=0.12
   run:
     - python
     - m2w64-pkg-config  # [win]
