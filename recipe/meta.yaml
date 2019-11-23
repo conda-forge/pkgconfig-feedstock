@@ -9,7 +9,7 @@ source:
   sha256: b4b8277cf33df2bfdd73da2bc4faab1b4b65b6d12e295aa6c70987642bcfb5c7
 
 build:
-  number: 1001
+  number: 1002
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - nose >=1.0
   run:
     - python
-    - m2w64-pkg-config  # [win]
+    - pkg-config
 
 test:
   imports:
