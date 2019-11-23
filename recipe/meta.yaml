@@ -21,8 +21,8 @@ requirements:
     - nose >=1.0
   run:
     - python
-    - pkg-config  # [win and py27]
-    - m2w64-pkg-config  # [not(win and py27)]
+    - m2w64-pkg-config  # [win and py27]
+    - pkg-config  # [not(win and py27)]
 
 test:
   imports:
