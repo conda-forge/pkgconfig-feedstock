@@ -17,14 +17,17 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pkg-config  # [unix]
+    - poetry
   host:
     - python
     - pip
     - nose >=1.0
+    - poetry
   run:
     - python
     - m2w64-pkg-config  # [win and py27]
     - pkg-config  # [not(win and py27)]
+    - poetry
 
 test:
   imports:
