@@ -27,7 +27,6 @@ requirements:
     - python
     - m2w64-pkg-config  # [win and py27]
     - pkg-config  # [not(win and py27)]
-    - poetry
 
 test:
   imports:
