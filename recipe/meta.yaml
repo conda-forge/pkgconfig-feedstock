@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.5.2" %}
 
 package:
   name: pkgconfig
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/matze/pkgconfig/archive/v{{ version }}.tar.gz
-  sha256: 38c5de8392f4acfe7f36b25d113c496d68f534e983afdbd0ba7240c8c475b161
+  sha256: 4df0845fa1936f232b9afd951943f452acab0239de6eda753c914c199de5aab3
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
   host:
     - python
     - pip
-    - nose >=1.0
+    - poetry-core
   run:
     - python
     - m2w64-pkg-config  # [win and py27]
