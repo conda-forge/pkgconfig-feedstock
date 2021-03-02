@@ -20,7 +20,7 @@ requirements:
   host:
     - python
     - pip
-    - poetry_core
+    - poetry-core
   run:
     - python
     - m2w64-pkg-config  # [win and py27]
