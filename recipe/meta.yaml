@@ -1,4 +1,4 @@
-{% set version = "1.5.2" %}
+{% set version = "1.5.4" %}
 
 package:
   name: pkgconfig
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/matze/pkgconfig/archive/v{{ version }}.tar.gz
-  sha256: 4df0845fa1936f232b9afd951943f452acab0239de6eda753c914c199de5aab3
+  sha256: 10795edee41f7f4a0cc35a0ab64403316907f3256aade8c9a106f6498c8d95b3
 
 build:
   number: 0
