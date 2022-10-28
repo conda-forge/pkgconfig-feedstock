@@ -9,22 +9,18 @@ source:
   sha256: 58ee1926b23ddb766a55eb9932441201a60e8e476d3798d0c5def167604f3b6c
 
 build:
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - pkg-config  # [unix]
   host:
-    - python
+    - python >=3.3
     - pip
     - poetry-core
   run:
-    - python
-    - m2w64-pkg-config  # [win and py27]
-    - pkg-config  # [not(win and py27)]
+    - python >=3.3
+    - pkg-config
 
 test:
   imports:
