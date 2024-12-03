@@ -9,20 +9,22 @@ source:
   sha256: 58ee1926b23ddb766a55eb9932441201a60e8e476d3798d0c5def167604f3b6c
 
 build:
-  number: 4
+  number: 5
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.3
+    - python {{ python_min }}
     - pip
     - poetry-core
   run:
-    - python >=3.3
+    - python >={{ python_min }}
     - pkg-config
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pkgconfig
 
