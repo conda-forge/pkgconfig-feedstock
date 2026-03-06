@@ -1,4 +1,4 @@
-{% set version = "1.5.5" %}
+{% set version = "1.6.0" %}
 
 package:
   name: pkgconfig
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/matze/pkgconfig/archive/v{{ version }}.tar.gz
-  sha256: 58ee1926b23ddb766a55eb9932441201a60e8e476d3798d0c5def167604f3b6c
+  sha256: 2a0d7626fcb7ee97713c134a30aeb4bc22d06599fa92a3ed95d55debd5a289ff
 
 build:
-  number: 5
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
